@@ -86,7 +86,7 @@ void draw() {
   
   // Note that I am using the map function to map temperature from a
   // range of 20 - 100 to a range of 10 - width
-  float diameter = map(temperature, 20, 100, 10, width);
+  float diameter = map(temperature, -10, 30, 10, width);
   ellipse(width/2, height/2, diameter, diameter);
   noLoop();
   
